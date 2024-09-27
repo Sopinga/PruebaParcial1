@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <h3>Crear Tarea</h3>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <span class="error" id="nombreError"></span><br>
+
+        <label for="duracion">Duracion:</label>
+        <input type="text" id="duracion" name="duracion">
+        <span class="error" id="duracionError"></span><br>
+
+        <button type="button" id="validateBtn">Ingresar</button>
+        
+    </form>
+    <script src="./complemento.js"></script>
+</body>
+</html>

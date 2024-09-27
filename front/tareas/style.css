@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    background-image: url(https://wallpapercave.com/wp/wp8679733.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+  }
+  
+  body h1 {
+    color: #e92323ad;
+    text-shadow: #000000 0px 0px 10px;
+  
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    padding: 20px;
+  }
+  
+  .card {
+    width: 240px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    flex-grow: 1;
+    /* Hace que las tarjetas se ajusten al espacio disponible */
+  }
+  
+  .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #8e44ad;
+    font-size: 1.8em;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1.1em;
+  }
+  
+  .card strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  button {
+    transform: translate(-50%, 125%);
+    width: 25%;
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+  }
+  
+  .btnEliminar {
+    background-color: #ec1e1e;
+    left: 25%;
+  }
+  
+  .btnSee {
+    background-color: #40e24d;
+    left: 50%;
+  }
+  
+  .btnEditar {
+    background-color: #008bf8;
+    left: 75%;
+  }
+  
+  .card:hover .btnEliminar,
+  .card:hover .btnSee,
+  .card:hover .btnEditar {
+    transform: translate(-33%, 33%);
+    opacity: 1;
+  
+  }
+  
+  
+  a button {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  a button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  a label {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  a body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #f4f4f4;
+  
+  }
+  
+  a span {
+    color: rgb(255, 0, 0);
+  
+  }
+  
+  .botonlindo {
+    background-color: #e78115;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 30px;
+  }
+  
+  .botonlindo:hover {
+    background-color: #724604;
+  }
+  
+  .botonlindo:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .botonlindo {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+  
+  }
